@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+img {
+    height: auto;
+}
+body {
+    background-color: white;
+    padding: 0 10%;
+}
+header {
+    width: 100%;
+   
+}
+header::after {
+content: '';
+display: table;
+clear: both;
+}
+.logo {
+    float: left;
+    width: 100px;
+}
+.inner-header {
+    background-color: red;
+    display: block;
+    width: 80%;
+    margin:0 auto;
+}
+h
+nav ul {
+    float: right;
+}
+li {    
+    display: inline-block;
+    width: 35px;
+    margin: 0px 20px;
+    color: black;
+}
