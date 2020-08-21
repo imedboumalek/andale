@@ -26,8 +26,12 @@ header {
 .logo {
     float: left;
     height: 100%;
-    position: relative;
-    left: 10%;
+    font-family: 'pacifico',sans-serif;
+    color: gold;
+    font-size: x-large;
+    font-weight: normal;
+    margin-left: 10%;
+
 }
 
 .inner-header {
