@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
     padding: 0;
@@ -14,7 +15,7 @@ img {
 }
 
 body {
-    background-color: white;
+    background-color: whitesmoke;
 }
 
 header {
@@ -26,16 +27,16 @@ header {
 .logo {
     float: left;
     height: 100%;
-    font-family: 'pacifico',sans-serif;
+    font-family: 'pacifico', sans-serif;
     color: gold;
-    font-size: x-large;
+    font-size: larger;
     font-weight: normal;
     margin-left: 10%;
+    margin-top: 10px;
 
 }
 
 .inner-header {
-   
     display: block;
     height: 100%;
     width: 80%;
@@ -67,12 +68,55 @@ li a {
 li a:hover {
     border-bottom: 4px rgb(255, 229, 82) solid;
 }
+
 li:last-child a {
+    background-color: white;
     border: 4px gold solid;
     border-radius: 30px;
 }
+
 li:last-child a:hover {
     border: 4px gold solid;
     background-color: gold;
     color: white;
+}
+
+.body-container {
+    width: 100%;
+    contain: content;
+}
+
+.first-section {
+    padding: 3% 5%;
+
+    width: 100%;
+    height: 600px;
+}
+
+.isometric {
+    width: 50%;
+    float: right;
+    margin: auto;
+}
+
+.headings {
+    font-family: 'pacifico', sans-serif;
+    font-weight: 550;
+}
+
+.dsc {
+    font-family: 'quicksand', sans-serif;
+    font-size: 28px;
+}
+
+.writing {
+    width: 40%;
+    height: auto;
+    border: 3px whitesmoke solid;
+    border-radius: 30px;
+    padding: 10px 35px;
+    float: left;
+    margin: 80px auto;
+    vertical-align: middle;
+
 }
