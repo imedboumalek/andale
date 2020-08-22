@@ -31,7 +31,7 @@ header {
     color: gold;
     font-size: larger;
     font-weight: normal;
-    margin-left: 10%;
+    margin-left: 40px;
     margin-top: 10px;
 
 }
@@ -70,15 +70,16 @@ li a:hover {
 }
 
 li:last-child a {
-    background-color: white;
+    background-color: gold;
     border: 4px gold solid;
     border-radius: 30px;
+    
 }
 
 li:last-child a:hover {
     border: 4px gold solid;
     background-color: gold;
-    color: white;
+    color: whitesmoke;
 }
 
 .body-container {
@@ -87,8 +88,8 @@ li:last-child a:hover {
 }
 
 .first-section {
+    margin:100px 0px;
     padding: 3% 5%;
-
     width: 100%;
     height: 600px;
 }
@@ -111,12 +112,40 @@ li:last-child a:hover {
 
 .writing {
     width: 40%;
-    height: auto;
-    border: 3px whitesmoke solid;
-    border-radius: 30px;
-    padding: 10px 35px;
+    height:auto;
+}
+.first-writing {
+    margin: 60px auto auto 20px;
     float: left;
-    margin: 80px auto;
-    vertical-align: middle;
+}
+.perks {
+    background-color: rgba(255, 217, 0, 0.705);
+    width: 100%;
+    margin-top: 50px;
+    height: 630px;
+    padding:0 5%;
+}
+.block {
+    background-color: white;
+    float:left;
+    width: 27%;
+    height: auto;
+    border-radius: 30px;
+    padding: 2%;
+    margin:47px;
 
+}
+.block img {
+    width: 70%;
+    margin: 0 15%;
+    
+}
+.block h2 {
+    font-family: 'quicksand',sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.block p {
+    font-size:20px;
+    font-family:'quicksand',sans-serif;
 }
