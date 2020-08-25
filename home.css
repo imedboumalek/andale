@@ -14,10 +14,7 @@ img {
     width: auto;
 }
 
-body {
-    background-color: whitesmoke;
-}
-
+/*--Header design--*/
 header {
     width: 100%;
     height: 80px;
@@ -81,7 +78,13 @@ li:last-child a:hover {
     background-color: gold;
     color: whitesmoke;
 }
+/* --header design-- */
 
+
+/*--Body design--*/
+body {
+    background-color: whitesmoke;
+}
 .body-container {
     width: 100%;
     contain: content;
@@ -121,24 +124,34 @@ li:last-child a:hover {
 .perks {
     background-color: rgba(255, 217, 0, 0.705);
     width: 100%;
-    margin-top: 50px;
-    height: 630px;
-    padding:0 5%;
+    margin: 50px 0px;
+    height: 750px;
+
+}
+.perks h2 {
+    text-align: center;
+    font-family: 'quicksand', sans-serif;
+    font-size: 45px;
+    margin:22px;
+}
+.block-container{
+    width: 100%;
+    height: 90%;
+    padding:0% 5%;
 }
 .block {
     background-color: white;
     float:left;
-    width: 27%;
-    height: auto;
+    width: 30%;
+    height: 80%;
     border-radius: 30px;
     padding: 2%;
-    margin:47px;
+    margin:1.61rem;
 
 }
 .block img {
     width: 70%;
-    margin: 0 15%;
-    
+    margin: auto 15%;
 }
 .block h2 {
     font-family: 'quicksand',sans-serif;
@@ -148,4 +161,19 @@ li:last-child a:hover {
 .block p {
     font-size:20px;
     font-family:'quicksand',sans-serif;
+    
 }
+.block:nth-child(2) p {
+    font-size:20px;
+    font-family:'quicksand',sans-serif;
+    margin-top: 17%;
+
+}
+.block:nth-child(3) p {
+    font-size:20px;
+    font-family:'quicksand',sans-serif;
+    margin-top: 21%;
+}
+/*--body design --*/
+/*--footer--*/
+/*--footer--*/
