@@ -105,6 +105,7 @@ body {
 
 .headings {
     font-family: 'pacifico', sans-serif;
+    font-size: 50px;
     font-weight: 550;
 }
 
@@ -128,10 +129,11 @@ body {
     height: 750px;
 
 }
-.perks h2 {
+.perks > h2 {
     text-align: center;
-    font-family: 'quicksand', sans-serif;
+    font-family: 'pacifico', sans-serif;
     font-size: 45px;
+    font-weight: 500;
     margin:22px;
 }
 .block-container{
