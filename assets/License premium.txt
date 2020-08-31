@@ -20,7 +20,7 @@ You are not allowed to:
 - Sub-license, resell or rent it.
 - Include it in any online or offline archive or database.
 
-The full terms of the license are described in sections 7 and 8 of the Freepik
+The full terms of the license are described in flex-containers 7 and 8 of the Freepik
 terms of use, available online in the following link:
 
   http://www.freepik.com/terms_of_use

@@ -14,59 +14,69 @@
             <a class="logo" href="index.html">
                 <h1>Andale</h1>
             </a>
-            <nav>
+            <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+            </div>
+            <nav class="desktop-nav">
                 <ul>
                     <li><a href="#about-us">Who are we?</a> </li>
                     <li><a href="#locations">Locations</a> </li>
                     <li><a href="#pricing">Pricing</a> </li>
-                    <li><a href="" class="Contact-button">Contact us</a> </li>
+                    <li><a href="#contact" class="Contact-button">Contact us</a> </li>
                 </ul>
             </nav>
         </div>
+
+        <ul class="mobile-nav">
+            <li><a href="#about-us">Who are we?</a> </li>
+            <li><a href="#locations">Locations</a> </li>
+            <li><a href="#pricing">Pricing</a> </li>
+            <li><a href="#contact" class="Contact-button">Contact us</a> </li>
+        </ul>
+
     </header>
     <div class="body-container">
-        <div class="first-section">
-
-            <div class="writing first-writing">
+        <div id="about-us" class="flex-container">
+            <div class="writing first-writing" style="order: 1;">
                 <h1 class="headings">cheap, fast, and reliable!</h1>
                 <p class="dsc"> For years, Andale has been delivering happiness right to people's door steps. With its
                     cheap pricing, easy to use app, and reliablity, Andale is people's go to delivery company.
                 </p>
             </div>
-            <img class="isometric" id="phone-dude" src="assets/phoneguy.svg" alt="delivery pic">
+            <img class="isometric" id="phone-dude" src="assets/phoneguy.svg" alt="delivery pic" style="order: 2;">
         </div>
-        <div class="perks">
+        <div class="flex-container" id="perks">
             <h2>why us?</h2>
-            <div class="block-container">
-                <div class="block">
-                    <h2>Because we can</h2>
-                    <img src="assets/warehouse.jpg" alt="warehouse pic">
-                    <p>With Andale's massive warehouses located all around the country, its army of workers, and its
-                        fleet
-                        of ships, planes, and trucks, we can handle what you throw at as. As much as you want, as big as
-                        you
-                        want.
-                    </p>
-                </div>
-                <div class="block ">
-                    <h2>Real-time tracking</h2>
-                    <img src="assets/tracking.jpg" alt="tracking pic">
-                    <p>Our easy to use app lets you schedule a delivery right from the comfort of your bed, and offers
-                        you
-                        real-time tracking, so you never stay out of the loop.</p>
-                </div>
-                <div class="block">
-                    <h2>Door to door</h2>
-                    <img src="assets/door_deliv.svg" alt="door pic">
-                    <p> Trafic sucks huh? Don't have enough trunk space? No worries, Andale delivers from your doorstep
-                        right to your clients doorstep, so you don't have move an inch.
-                    </p>
-                </div>
+
+            <div class="block" style="order: 1;">
+                <h2>Because we can</h2>
+                <img src="assets/warehouse.jpg" alt="warehouse pic">
+                <p>With Andale's massive warehouses located all around the country, its army of workers, and its
+                    fleet
+                    of ships, planes, and trucks, we can handle what you throw at as. As much as you want, as big as
+                    you
+                    want.
+                </p>
+            </div>
+            <div class="block " style="order: 2;">
+                <h2>Real-time tracking</h2>
+                <img src="assets/tracking.jpg" alt="tracking pic">
+                <p>Our easy to use app lets you schedule a delivery right from the comfort of your bed, and offers
+                    you
+                    real-time tracking, so you never stay out of the loop.</p>
+            </div>
+            <div class="block" style="order: 3;">
+                <h2>Door to door</h2>
+                <img src="assets/door_deliv.svg" alt="door pic">
+                <p> Trafic sucks huh? Don't have enough trunk space? No worries, Andale delivers from your doorstep
+                    right to your clients doorstep, so you don't have move an inch.
+                </p>
+
             </div>
 
-
+            <!--
         </div>
-        <div id="locations">
+        <div class="flex-container" id="locations">
             <img class="isometric" id="map" src="assets/dz.svg" alt="dz">
             <div class="writing second-writing">
                 <h1 class="headings">We're everywhere!</h1>
@@ -77,7 +87,7 @@
                 </p>
             </div>
         </div>
-        <div id="pricing">
+        <div id="pricing" class="flex-container">
             <table>
                 <tr>
                     <th>lol</th>
@@ -119,12 +129,11 @@
                     <td>999$</td>
                     <td><a href="#contact">Get quote</a></td>
                 </tr>
-
-
             </table>
         </div>
 
-    </div>
+    </div> -->
+            <script src="app.js"></script>
 </body>
 
 </html>
