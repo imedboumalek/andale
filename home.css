@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -44,7 +45,6 @@ p {
     color: gold;
 
 }
-
 
 .menu-btn {
     position: relative;
@@ -129,7 +129,8 @@ p {
 }
 
 .flex-container {
-    margin-top: 20% 0%;
+
+    margin: 10% 0%;
     padding: 5%;
     display: flex;
     flex-flow: column wrap;
@@ -148,27 +149,33 @@ p {
     font-size: x-large;
 }
 
+.dsc {
+    font-size: large;
+}
+
 .isometric {
-    margin: 10% 0;
+    margin: 10% auto;
 }
 
 #perks {
+    padding: 2%;
     background-color: gold;
     width: 100%;
 
 }
 
-#perks>h2 {
+h2 {
     font-family: 'pacifico', sans-serif;
+    text-align: center;
     font-weight: normal;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .block {
-    padding: 5%;
-    height: 500px;
+    padding: 4%;
+    height: auto;
     background-color: white;
-    margin: 10% 5%;
+    margin: 3% 5%;
     width: 90%;
     border-radius: 20px;
 
@@ -185,4 +192,52 @@ p {
 .block img {
     margin: 5% 2%;
     width: 96%;
+}
+
+#tracking img {
+    margin: 23% auto;
+}
+
+#door img {
+    margin: 25% auto;
+}
+
+
+table {
+
+    border-radius: 4px;
+    border-collapse: collapse;
+    width: 100%;
+    height: 200px;
+    margin: 5% auto;
+    font-family: 'quicksand';
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    border-top: 1px lightgray solid;
+    border-bottom: 1px lightgray solid;
+    font-size: 18px;
+}
+
+table tr:nth-child(even) {
+    background: rgb(230, 230, 230);
+}
+
+table td a {
+
+    font-size: 15px;
+    color: white;
+    background-color: gold;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.fa-check {
+    color: rgb(49, 49, 49);
+}
+
+.fa-times {
+    color: rgb(105, 105, 105);
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/f895649843.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 
@@ -39,6 +40,7 @@
         <div id="about-us" class="flex-container">
             <div class="writing first-writing" style="order: 1;">
                 <h1 class="headings">cheap, fast, and reliable!</h1>
+
                 <p class="dsc"> For years, Andale has been delivering happiness right to people's door steps. With its
                     cheap pricing, easy to use app, and reliablity, Andale is people's go to delivery company.
                 </p>
@@ -58,14 +60,14 @@
                     want.
                 </p>
             </div>
-            <div class="block " style="order: 2;">
+            <div class="block " id="tracking" style="order: 2;">
                 <h2>Real-time tracking</h2>
                 <img src="assets/tracking.jpg" alt="tracking pic">
                 <p>Our easy to use app lets you schedule a delivery right from the comfort of your bed, and offers
                     you
                     real-time tracking, so you never stay out of the loop.</p>
             </div>
-            <div class="block" style="order: 3;">
+            <div class="block" id="door" style="order: 3;">
                 <h2>Door to door</h2>
                 <img src="assets/door_deliv.svg" alt="door pic">
                 <p> Trafic sucks huh? Don't have enough trunk space? No worries, Andale delivers from your doorstep
@@ -74,12 +76,13 @@
 
             </div>
 
-            <!--
+
         </div>
         <div class="flex-container" id="locations">
-            <img class="isometric" id="map" src="assets/dz.svg" alt="dz">
+            <img class="isometric" id="map" src="assets/dz.svg" alt="dz" style="order: 2;">
             <div class="writing second-writing">
-                <h1 class="headings">We're everywhere!</h1>
+                <h1 class="headings" align="center">We're everywhere!</h1>
+                <br>
                 <p class="dsc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur obcaecati, esse fugiat
                     nostrum dignissimos expedita, eos ullam, saepe quod ipsa voluptas assumenda autem illo doloribus!
@@ -87,13 +90,16 @@
                 </p>
             </div>
         </div>
-        <div id="pricing" class="flex-container">
-            <table>
+
+        <div>
+            <h2>Pricing</h2>
+
+            <table id="pricing">
                 <tr>
-                    <th>lol</th>
-                    <th>Individual</th>
-                    <th>Small business</th>
-                    <th>Corporate</th>
+                    <td></td>
+                    <td>Individual</td>
+                    <td>Small business</td>
+                    <td>Corporate</td>
                 </tr>
                 <tr>
                     <td>Lorem</td>
@@ -127,13 +133,13 @@
                     <td>price</td>
                     <td>99$</td>
                     <td>999$</td>
-                    <td><a href="#contact">Get quote</a></td>
+                    <td><a href="#contact" class="contact-button">Get quote</a></td>
                 </tr>
             </table>
         </div>
 
-    </div> -->
-            <script src="app.js"></script>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
