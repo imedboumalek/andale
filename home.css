@@ -53,7 +53,6 @@ p {
 .menu-btn {
     position: relative;
     top: 8px;
-
     height: 40px;
     width: 40px;
     float: right;
@@ -64,7 +63,7 @@ p {
 }
 
 .menu-btn_burger {
-    width: 30px;
+    width: 28px;
     height: 4px;
     background: black;
     border-radius: 8px;
@@ -76,7 +75,7 @@ p {
 .menu-btn_burger::after {
     content: "";
     position: absolute;
-    width: 30px;
+    width: 28px;
     height: 4px;
     background: black;
     border-radius: 8px;
@@ -113,7 +112,7 @@ p {
     clear: both;
     width: 100%;
     text-align: center;
-    height: 0;
+    height: 0vh;
     visibility: hidden;
     opacity: 0;
     transition: height 300ms, visibility 0s, opacity 0.5s ease-in;
@@ -123,7 +122,7 @@ p {
 .mobile-nav.open {
     visibility: visible;
     opacity: 1;
-    height: 188px;
+    height: 24vh;
 
 }
 
