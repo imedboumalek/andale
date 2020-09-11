@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    ;
 }
 
 * {
@@ -224,7 +225,7 @@ table {
     box-shadow: 0 0 20px -10px #000000;
     border-radius: 15px;
     border-collapse: collapse;
-    width: 95%;
+    width: 90%;
     height: 200px;
     margin: 5% auto;
     font-family: 'quicksand';
