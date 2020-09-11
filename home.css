@@ -141,7 +141,7 @@ p {
 }
 
 .flex-container {
-    margin: 10px 0;
+    margin: 0;
     padding: 5%;
     display: flex;
     flex-flow: column wrap;
