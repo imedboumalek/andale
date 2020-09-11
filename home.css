@@ -52,21 +52,22 @@ p {
 
 .menu-btn {
     position: relative;
-    top: 10px;
+    top: 8px;
+
+    height: 40px;
+    width: 40px;
     float: right;
     display: flex;
-    height: 35px;
-    width: 35px;
     align-items: center;
     justify-content: center;
     transition: all .5s ease-in-out;
 }
 
 .menu-btn_burger {
-    width: 25px;
+    width: 30px;
     height: 4px;
     background: black;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: all .5s ease-in-out;
 
 }
@@ -75,19 +76,19 @@ p {
 .menu-btn_burger::after {
     content: "";
     position: absolute;
-    width: 25px;
+    width: 30px;
     height: 4px;
     background: black;
-    border-radius: 6px;
+    border-radius: 8px;
     transition: all .5s ease-in-out;
 }
 
 .menu-btn_burger::after {
-    transform: translateY(8px);
+    transform: translateY(7px);
 }
 
 .menu-btn_burger::before {
-    transform: translateY(-8px);
+    transform: translateY(-7px);
 }
 
 /* mennu-btn animation */
@@ -97,11 +98,11 @@ p {
 }
 
 .menu-btn.open .menu-btn_burger::before {
-    transform: rotate(45deg) translate(30px, -30px);
+    transform: rotate(45deg) translate(28px, -28px);
 }
 
 .menu-btn.open .menu-btn_burger::after {
-    transform: rotate(-45deg) translate(30px, 30px);
+    transform: rotate(-45deg) translate(28px, 28px);
 }
 
 .desktop-nav {
@@ -127,6 +128,7 @@ p {
 }
 
 .mobile-nav a {
+    font-family: 'grandstander';
     line-height: 3;
     color: black;
     text-decoration: underline;
@@ -213,10 +215,14 @@ h2 {
     margin: 25% auto;
 }
 
+#map {
+    margin: 10% auto;
+    width: 100%;
+}
 
 table {
     box-shadow: 0 0 20px -10px #000000;
-
+    border-radius: 15px;
     border-collapse: collapse;
     width: 95%;
     height: 200px;
@@ -227,13 +233,19 @@ table {
 
 table td {
     padding: 10px;
-    border-top: 1px lightgray solid;
-    border-bottom: 1px lightgray solid;
     font-size: 18px;
 }
 
 table tr:nth-child(even) {
-    background: rgb(230, 230, 230);
+    background: #d0d0d0bb;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
 }
 
 table td a {
