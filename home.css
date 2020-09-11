@@ -79,25 +79,25 @@ p {
 }
 
 .menu-btn_burger::after {
-    transform: translateY(9px);
+    transform: translateY(8px);
 }
 
 .menu-btn_burger::before {
-    transform: translateY(-9px);
+    transform: translateY(-8px);
 }
 
 /* mennu-btn animation */
 .menu-btn.open .menu-btn_burger {
-    transform: translateX(-50px);
+    transform: translateX(-40px);
     background: transparent;
 }
 
 .menu-btn.open .menu-btn_burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
+    transform: rotate(45deg) translate(30px, -30px);
 }
 
 .menu-btn.open .menu-btn_burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
+    transform: rotate(-45deg) translate(30px, 30px);
 }
 
 .desktop-nav {
