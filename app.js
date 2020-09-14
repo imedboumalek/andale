@@ -15,6 +15,4 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
-const scroll = new SmoothScroll('.menu a[href*="#"]', {
-    speed: 900
-});
+var scroll = new SmoothScroll('.mobile-nav a[href*="#"]');
