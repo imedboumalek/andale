@@ -15,3 +15,4 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+var scroll = new SmoothScroll('.mobile-nav a[href*="#"]');
