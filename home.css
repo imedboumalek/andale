@@ -190,10 +190,10 @@ h2 {
 }
 
 .block {
-    padding: 4%;
-    height: auto;
+    padding: 0% 5%;
+    height: 360px;
     background-color: white;
-    margin: 3% 5%;
+    margin: 3% auto;
     width: 90%;
     border-radius: 20px;
 
@@ -208,17 +208,20 @@ h2 {
 }
 
 .block img {
-    margin: 5% 2%;
-    width: 96%;
+    padding: 10px;
+    margin: -4px 20%;
+    width: 60%;
 }
 
 #tracking img {
-    margin: 23% auto;
+    margin: 8% 20%;
 }
 
 #door img {
-    margin: 25% auto;
+    margin: 10% 20%;
 }
+
+
 
 #map {
     margin: 10% auto;
@@ -280,7 +283,7 @@ footer {
     width: 100%;
     height: 180px;
     background-color: #383838;
-    padding-top: 15px;
+    padding: 15px;
     justify-content: space-around;
 }
 
@@ -300,4 +303,34 @@ footer h3 {
     color: rgb(200, 200, 200);
     background-color: #444444;
     text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    border: 1px gray solid;
+    background-color: #ffffff;
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 3%;
+}
+
+input:nth-child(3),
+input:nth-child(4),
+input:nth-child(5),
+input:nth-child(6),
+input:nth-child(7),
+input:nth-child(8) {
+    width: 44.5%;
+    display: inline-block;
+}
+
+input:nth-child(9) {
+    padding: 0;
+    height: 200px;
 }
