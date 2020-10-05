@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0px;
     width: 100%;
     height: auto;
@@ -163,7 +163,7 @@ p {
 .writing h1 {
     font-family: 'pacifico', sans-serif;
     font-weight: normal;
-    font-size: x-large;
+    font-size: clamp(40px, 5vh, 50px);
 }
 
 .dsc {
@@ -333,4 +333,48 @@ input:nth-child(8) {
 input:nth-child(9) {
     padding: 0;
     height: 200px;
+}
+
+@media only screen and (min-width:600px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+        float: right;
+    }
+
+    .desktop-nav li {
+        float: left;
+        margin: 5px 10px;
+    }
+
+    .desktop-nav li a {
+        display: inline-block;
+        color: black;
+        padding: 8px;
+        font-size: large;
+    }
+
+    .contact-button {
+
+        border: 2px gold solid;
+        border-radius: 30px;
+    }
+
+    .contact-button:hover {
+        background-color: gold;
+        border: 2px gold solid;
+        border-radius: 30px;
+    }
+
+    .isometric {
+        width: 50%;
+    }
+
 }
