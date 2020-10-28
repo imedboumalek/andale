@@ -27,7 +27,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0px;
     width: 100%;
     height: auto;
@@ -336,6 +336,10 @@ input:nth-child(9) {
 }
 
 @media only screen and (min-width:600px) {
+    header {
+        position: fixed;
+    }
+
     .menu-btn {
         display: none;
     }
