@@ -12,6 +12,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
+
     list-style-type: none;
 }
 
@@ -23,10 +24,11 @@ img {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
 }
 
 header {
+    z-index: 1;
     position: sticky;
     top: 0px;
     width: 100%;
@@ -41,6 +43,7 @@ header {
 p {
     font-family: "quicksand", sans-serif;
     font-weight: 420;
+    text-align: justify;
 }
 
 .inner-header {
@@ -51,7 +54,7 @@ p {
 .logo {
     float: left;
     height: auto;
-    color: gold;
+    color: #ffd700;
 
 }
 
@@ -146,24 +149,24 @@ p {
     clear: both;
 }
 
-.flex-container {
+.section {
     margin: 0;
     padding: 5%;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 
 }
 
 .writing {
-    flex: 1;
+    width: 100%;
 }
 
 .writing h1 {
     font-family: 'pacifico', sans-serif;
     font-weight: normal;
-    font-size: clamp(40px, 5vh, 50px);
+    font-size: clamp(30px, 8vw, 45px);
 }
 
 .dsc {
@@ -176,8 +179,7 @@ p {
 }
 
 #perks {
-    padding: 2%;
-    background-color: gold;
+    padding: 5%;
     width: 100%;
 
 }
@@ -186,17 +188,23 @@ h2 {
     font-family: 'pacifico', sans-serif;
     text-align: center;
     font-weight: normal;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .block {
-    padding: 0% 5%;
-    height: 360px;
+    padding: 5%;
+    min-height: 360px;
     background-color: white;
-    margin: 3% auto;
-    width: 90%;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+    margin: 6% auto;
+    max-width: 90%;
     border-radius: 20px;
+    transition: transform 0.25s ease;
+}
 
+.block:hover {
+    transform: scale(1.05);
+    transition: transform 0.25s ease;
 }
 
 .block h2 {
@@ -333,52 +341,4 @@ input:nth-child(8) {
 input:nth-child(9) {
     padding: 0;
     height: 200px;
-}
-
-@media only screen and (min-width:600px) {
-    header {
-        position: fixed;
-    }
-
-    .menu-btn {
-        display: none;
-    }
-
-    .mobile-nav {
-        display: none;
-    }
-
-    .desktop-nav {
-        display: block;
-        float: right;
-    }
-
-    .desktop-nav li {
-        float: left;
-        margin: 5px 10px;
-    }
-
-    .desktop-nav li a {
-        display: inline-block;
-        color: black;
-        padding: 8px;
-        font-size: large;
-    }
-
-    .contact-button {
-
-        border: 2px gold solid;
-        border-radius: 30px;
-    }
-
-    .contact-button:hover {
-        background-color: gold;
-        border: 2px gold solid;
-        border-radius: 30px;
-    }
-
-    .isometric {
-        width: 50%;
-    }
-
 }

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <link rel="stylesheet" href="style/tablet.css">
     <script src="https://kit.fontawesome.com/f895649843.js" crossorigin="anonymous"></script>
 
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
@@ -40,7 +41,7 @@
 
     </header>
     <div class="body-container">
-        <div id="about-us" class="flex-container">
+        <div id="about-us" class="section">
             <div class="writing first-writing" style="order: 1;">
                 <h1 class="headings">cheap, fast, and reliable!</h1>
 
@@ -49,11 +50,11 @@
                 </p>
             </div>
             <img class="isometric" id="phone-dude" src="assets/phoneguy.png" alt="delivery pic" style="order: 2;">
-        </div>
-        <div class="flex-container" id="perks">
-            <h2>why us?</h2>
+        </div><br><br> <br>
+        <h2>why us?</h2>
+        <div class="section" id="perks">
 
-            <div class="block" style="order: 1;">
+            <div class="block">
                 <h2>Because we can</h2>
                 <img src="assets/warehouse.jpg" alt="warehouse pic">
                 <p>With Andale's massive warehouses located all around the country, its army of workers, and its
@@ -63,14 +64,14 @@
                     want.
                 </p>
             </div>
-            <div class="block " id="tracking" style="order: 2;">
+            <div class="block " id="tracking">
                 <h2>Real-time tracking</h2>
                 <img src="assets/tracking.jpg" alt="tracking pic">
                 <p>Our easy to use app lets you schedule a delivery right from the comfort of your bed, and offers
                     you
                     real-time tracking, so you never stay out of the loop.</p>
             </div>
-            <div class="block" id="door" style="order: 3;">
+            <div class="block" id="door">
                 <h2>Door to door</h2>
                 <img src="assets/door_deliv.svg" alt="door pic">
                 <p> Trafic sucks huh? Don't have enough trunk space? No worries, Andale delivers from your doorstep
@@ -81,8 +82,7 @@
 
 
         </div>
-        <div class="flex-container" id="locations">
-            <img class="isometric" id="map" src="assets/dz.png" alt="dz" style="order: 2;">
+        <div class="section" id="locations">
             <div class="writing second-writing">
                 <h1 class="headings" align="center">We're everywhere!</h1>
                 <br>
@@ -91,6 +91,7 @@
                     nostrum dignissimos expedita, eos ullam, saepe quod ipsa voluptas assumenda autem illo doloribus!
                     Tenetur, vel? Qui, exercitationem?
                 </p>
+                <img class="isometric" id="map" src="assets/dz.png" alt="dz">
             </div>
         </div>
 
@@ -140,7 +141,7 @@
                 </tr>
             </table>
         </div>
-        <!-- <div class="flex-container" id="contact">
+        <!-- <div class="section" id="contact">
             <h2>Get in touch!</h2> <br>
             <form action="input" method="get">
                 <input type="email" placeholder="Email*" required>
@@ -194,7 +195,25 @@
         <div class="the-dev"> made with <i class="fas fa-heart"> </i> by <a
                 style="color: rgb(200, 200, 200); text-decoration: underline;" href="#">Imed
                 Boumalek </a></div>
-        <script src="app.js"></script>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn');
+            const dropDown = document.querySelector('.mobile-nav');
+            let menuOpen = false;
+
+            menuBtn.addEventListener('click', () => {
+                if (!menuOpen) {
+                    menuBtn.classList.add('open');
+                    dropDown.classList.add('open');
+                    menuOpen = true;
+
+
+                } else {
+                    menuBtn.classList.remove('open');
+                    dropDown.classList.remove('open');
+                    menuOpen = false;
+                }
+            });
+        </script>
 </body>
 
 </html>
