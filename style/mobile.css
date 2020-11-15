@@ -12,7 +12,7 @@ html {
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-
+    transition: transform 0.25s ease;
     list-style-type: none;
 }
 
@@ -173,6 +173,12 @@ p {
     font-size: large;
 }
 
+.dsc-last {
+    font-size: large;
+    width: 90%;
+    margin: auto;
+}
+
 .isometric {
     margin: 10% auto;
     width: 100%;
@@ -204,7 +210,7 @@ h2 {
 
 .block:hover {
     transform: scale(1.05);
-    transition: transform 0.25s ease;
+
 }
 
 .block h2 {
@@ -217,60 +223,70 @@ h2 {
 
 .block img {
     padding: 10px;
-    margin: -4px 20%;
-    width: 60%;
+    margin: -4px 10%;
+    width: 80%;
 }
 
 #tracking img {
-    margin: 8% 20%;
+    margin: 8% 10%;
 }
 
 #door img {
-    margin: 10% 20%;
+    margin: 10% 10%;
 }
 
 
 
 #map {
-    margin: 10% auto;
-    width: 100%;
+    margin: 10% 5%;
+    width: 90%;
 }
 
 table {
-    box-shadow: 0 0 20px -10px #000000;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     border-collapse: collapse;
     width: 90%;
-    height: 200px;
-    margin: 5% auto;
+    height: 250px;
+    margin: 5% 5%;
     font-family: 'quicksand';
+    font-size: 14px;
     text-align: center;
 }
 
-table td {
-    padding: 10px;
-    font-size: 18px;
+table:hover {
+    transform: scale(1.05);
+
+}
+
+table tr:nth-child(-n+5) {
+    border-bottom: 1px grey solid;
 }
 
 table tr:nth-child(even) {
-    background: #d0d0d0bb;
+    background-color: rgb(231, 231, 231);
 }
 
-table tr:last-child td:first-child {
+table tr:nth-child(-n+5) {
+    border-bottom: 1px grey solid;
+}
+
+table tr:nth-child(6) td:first-child {
     border-bottom-left-radius: 15px;
+
 }
 
-table tr:last-child td:last-child {
+table tr:nth-child(6) td:last-child {
     border-bottom-right-radius: 15px;
+
 }
 
-table td a {
-
-    font-size: 15px;
-    color: white;
-    background-color: gold;
+table tr:nth-child(6) td:last-child a {
+    color: black;
     padding: 8px;
-    border-radius: 20px;
+    background-color: rgb(250, 223, 73);
+    border-radius: 15px;
+
 }
 
 .fa-check {
@@ -290,7 +306,7 @@ footer {
     color: white;
     width: 100%;
     height: 180px;
-    background-color: #383838;
+    background-color: rgb(34, 34, 34);
     padding: 15px;
     justify-content: space-around;
 }
@@ -303,13 +319,15 @@ footer h3 {
     height: 150px;
 }
 
-.the-dev {
+.the-dev>p {
+    display: inline-flexbox;
+    height: 50px;
     width: 100%;
     padding: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'quicksand', 'Times New Roman', Times, serif;
     font-size: 12px;
     color: rgb(200, 200, 200);
-    background-color: #444444;
+    background-color: rgb(34, 34, 34);
     text-align: center;
 }
 
