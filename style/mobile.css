@@ -160,6 +160,7 @@ p {
 }
 
 .writing {
+    margin: auto;
     width: 100%;
 }
 
@@ -167,17 +168,13 @@ p {
     font-family: 'pacifico', sans-serif;
     font-weight: normal;
     font-size: clamp(30px, 8vw, 45px);
+    margin: 10px auto;
 }
 
 .dsc {
     font-size: large;
 }
 
-.dsc-last {
-    font-size: large;
-    width: 90%;
-    margin: auto;
-}
 
 .isometric {
     margin: 10% auto;
@@ -243,15 +240,17 @@ h2 {
 }
 
 table {
+
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     border-collapse: collapse;
-    width: 90%;
+    width: 100%;
     height: 250px;
-    margin: 5% 5%;
+    margin: 5% auto;
     font-family: 'quicksand';
     font-size: 14px;
     text-align: center;
+    background-color: white;
 }
 
 table:hover {
@@ -264,8 +263,10 @@ table tr:nth-child(-n+5) {
 }
 
 table tr:nth-child(even) {
-    background-color: rgb(231, 231, 231);
+    background-color: rgba(231, 231, 231, 0.555);
 }
+
+
 
 table tr:nth-child(-n+5) {
     border-bottom: 1px grey solid;
@@ -289,6 +290,10 @@ table tr:nth-child(6) td:last-child a {
 
 }
 
+table td:nth-child(-n+3) {
+    border-right: 1px grey solid;
+}
+
 .fa-check {
     color: rgb(49, 49, 49);
 }
@@ -297,7 +302,7 @@ table tr:nth-child(6) td:last-child a {
     color: rgb(105, 105, 105);
 }
 
-footer {
+.flex {
     font-family: 'quicksand';
     font-size: .7em;
     line-height: 1.7;
@@ -319,8 +324,8 @@ footer h3 {
     height: 150px;
 }
 
-.the-dev>p {
-    display: inline-flexbox;
+.the-dev {
+
     height: 50px;
     width: 100%;
     padding: 5px;
@@ -328,6 +333,11 @@ footer h3 {
     font-size: 12px;
     color: rgb(200, 200, 200);
     background-color: rgb(34, 34, 34);
+    border-top: 1px rgb(34, 34, 34) solid;
+
+}
+
+.the-dev>p {
     text-align: center;
 }
 
