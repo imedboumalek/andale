@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/mobile.css">
     <link rel="stylesheet" href="style/tablet.css">
     <script src="https://kit.fontawesome.com/f895649843.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <title>Home</title>
 </head>
@@ -154,7 +154,8 @@
         <div class="section" id="contact">
             <img src="assets/mail.png" alt="mail" class="isometric"></img>
             <h2>Get in touch!</h2> <br>
-            <form action="input" method="POST">
+            <form action="https://send.pageclip.co/AOeskFpJg8lGMm91LfiMQt0PJUZMNy4j/andale-contact-form"
+                class="pageclip-form" method="post">
                 <label for="email"> Email:</label>
                 <input type="email" name="email" placeholder="required" required autocomplete="off">
                 <span class="underline"></span>
@@ -164,8 +165,9 @@
                 <label for="message">Message:</label>
                 <textarea name="message" placeholder="required" required autocomplete="off"></textarea>
                 <span class="underline"></span>
-                <button type="submit">Send <i class="far fa-paper-plane"></i></button>
-
+                <button type="submit" class="pageclip-form__submit">
+                    <span>Send <i class="far fa-paper-plane"></i></span>
+                </button>
             </form>
         </div>
         <footer>
@@ -229,6 +231,7 @@
                 }
             });
         </script>
+        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>
