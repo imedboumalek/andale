@@ -154,14 +154,17 @@
         <div class="section" id="contact">
             <img src="assets/mail.png" alt="mail" class="isometric"></img>
             <h2>Get in touch!</h2> <br>
-            <form action="input" method="get">
-                <input type="email" placeholder="Email*" required>
-                <input type="text" placeholder="Name*" required>
-                <input type="text" placeholder="from*" required>
-                <input type="text" placeholder="to*" required>
-                <input type="number" placeholder=" quantitiy">
-                <input type="text">
-
+            <form action="input" method="POST">
+                <label for="email"> Email:</label>
+                <input type="email" name="email" placeholder="required" required autocomplete="off">
+                <span class="underline"></span>
+                <label for="name"> Name:</label>
+                <input type="text" name="name" placeholder="required" required autocomplete="off">
+                <span class="underline"></span>
+                <label for="message">Message:</label>
+                <textarea name="message" placeholder="required" required autocomplete="off"></textarea>
+                <span class="underline"></span>
+                <button type="submit">Send <i class="far fa-paper-plane"></i></button>
 
             </form>
         </div>

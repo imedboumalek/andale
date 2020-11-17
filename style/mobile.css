@@ -14,6 +14,7 @@ html {
     text-decoration: none;
     transition: transform 0.25s ease;
     list-style-type: none;
+
 }
 
 
@@ -150,6 +151,7 @@ p {
 }
 
 .section {
+    font-family: 'quicksand';
     margin: 0;
     padding: 5%;
     display: flex;
@@ -325,19 +327,19 @@ footer h3 {
 }
 
 .the-dev {
-
-    height: 50px;
+    height: 40px;
     width: 100%;
     padding: 5px;
     font-family: 'quicksand', 'Times New Roman', Times, serif;
     font-size: 12px;
-    color: rgb(200, 200, 200);
+    color: whitesmoke;
     background-color: rgb(34, 34, 34);
     border-top: 1px rgb(34, 34, 34) solid;
 
 }
 
 .the-dev>p {
+    font-size: xx-small;
     text-align: center;
 }
 
@@ -345,28 +347,78 @@ form {
     width: 100%;
 }
 
-input {
-    border: 1px gray solid;
-    background-color: #ffffff;
-    display: block;
-    width: 90%;
-    height: 30px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    padding-left: 3%;
+input,
+textarea {
+    font-family: 'quicksand';
+    width: 100%;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 2px black solid;
+    background-color: transparent;
+    padding: 12px 10px;
+    resize: none;
+    transition: all 400ms 150ms;
+
+
+
 }
 
-input:nth-child(3),
-input:nth-child(4),
-input:nth-child(5),
-input:nth-child(6),
-input:nth-child(7),
-input:nth-child(8) {
-    width: 44.5%;
+input::placeholder,
+textarea::placeholder {
+    visibility: hidden;
+}
+
+textarea {
+    height: 50px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    padding: 12px 10px;
+    border-bottom: none;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    font-size: medium;
+    font-weight: 500;
+    visibility: visible;
+}
+
+input:focus {
+    height: 40px;
+}
+
+textarea:focus {
+    height: 180px;
+}
+
+.underline {
+    background-color: gold;
     display: inline-block;
+    height: 3px;
+    transform: scale(0);
+    transition: all 0.4s;
+    width: 100%;
+    margin-top: -2px;
+    margin-bottom: 40px;
 }
 
-input:nth-child(9) {
-    padding: 0;
-    height: 200px;
+input:focus+.underline,
+textarea:focus+.underline {
+    transform: scale(1);
+}
+
+
+button {
+    width: 60%;
+    margin: auto 20%;
+    height: auto;
+    border: none;
+    background-color: #ffd700;
+    font-family: 'pacifico';
+    font-size: 22px;
+    font-weight: 300;
 }
