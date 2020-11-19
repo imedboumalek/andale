@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/mobile.css">
     <link rel="stylesheet" href="style/tablet.css">
+    <link rel="stylesheet" href="/style/desktop.css">
     <script src="https://kit.fontawesome.com/f895649843.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
@@ -42,8 +43,8 @@
     </header>
     <div class="body-container">
         <div id="about-us" class="section">
-            <div class="writing first-writing" style="order: 1;">
-                <h1 class="headings">cheap, fast, and reliable!</h1>
+            <div class="writing about-us" style="order: 1;">
+                <h1>cheap, fast, and reliable!</h1>
 
                 <p class="dsc"> For years, Andale has been delivering happiness right to people's door steps. With its
                     cheap pricing, easy to use app, and reliablity, Andale is people's go to delivery company.
@@ -53,9 +54,8 @@
         </div>
 
         <div class="section" id="perks">
-            <h2 style="display: block;width: 100%;">why us?</h2>
             <div class="block">
-                <h2>Because we can</h2>
+                <h2>We got space</h2>
                 <img src="assets/warehouse.jpg" alt="warehouse pic">
                 <p>With Andale's massive warehouses located all around the country, its army of workers, and its
                     fleet
@@ -83,31 +83,29 @@
 
         </div>
         <div class="section" id="locations">
-            <div class="writing second-writing">
-                <h2 class="headings" align="center">We're everywhere!</h2>
-                <br>
+            <div class="writing locations">
+                <h2>We're everywhere!</h2>
                 <p class="dsc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tenetur obcaecati, esse fugiat
                     nostrum dignissimos expedita, eos ullam, saepe quod ipsa voluptas assumenda autem illo doloribus!
                     Tenetur, vel? Qui, exercitationem?
                 </p>
-                <img class="isometric" id="map" src="assets/dz.png" alt="dz">
             </div>
+            <img class="isometric" id="map" src="assets/dz.png" alt="dz">
         </div>
 
 
-        <div class="section">
+        <div class="section" id="pricing">
+            <div class="writing pricing">
 
-            <div class="writing">
-
-                <h2 class="headings">Pricing</h2>
+                <h2 class="">Pricing</h2>
                 <p class="dsc"> Flexible pricing to suite all your needs. can't find what you're looking for?
                     reach out, and
                     we'll be
                     happy to help</p>
             </div>
 
-            <table id="pricing">
+            <table>
                 <tr>
                     <td></td>
                     <td>Individual</td>
@@ -152,22 +150,24 @@
         </div>
 
         <div class="section" id="contact">
+            <div class="writing contact">
+                <form action="input" class="pageclip-form" method="post">
+                    <h2>Get in touch!</h2> <br>
+                    <label for="email"> Email:</label>
+                    <input type="email" name="email" placeholder="required" required autocomplete="off">
+                    <span class="underline"></span>
+                    <label for="name"> Name:</label>
+                    <input type="text" name="name" placeholder="required" required autocomplete="off">
+                    <span class="underline"></span>
+                    <label for="message">Message:</label>
+                    <textarea name="message" placeholder="required" required autocomplete="off"></textarea>
+                    <span class="underline"></span>
+                    <button type="submit" class="pageclip-form__submit">
+                        <span>Send <i class="far fa-paper-plane"></i></span>
+                    </button>
+                </form>
+            </div>
             <img src="assets/mail.png" alt="mail" class="isometric"></img>
-            <h2>Get in touch!</h2> <br>
-            <form action="input" class="pageclip-form" method="post">
-                <label for="email"> Email:</label>
-                <input type="email" name="email" placeholder="required" required autocomplete="off">
-                <span class="underline"></span>
-                <label for="name"> Name:</label>
-                <input type="text" name="name" placeholder="required" required autocomplete="off">
-                <span class="underline"></span>
-                <label for="message">Message:</label>
-                <textarea name="message" placeholder="required" required autocomplete="off"></textarea>
-                <span class="underline"></span>
-                <button type="submit" class="pageclip-form__submit">
-                    <span>Send <i class="far fa-paper-plane"></i></span>
-                </button>
-            </form>
         </div>
         <footer>
 
@@ -230,7 +230,7 @@
                 }
             });
         </script>
-        <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
 </body>
 
 </html>

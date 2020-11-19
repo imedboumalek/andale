@@ -1,5 +1,5 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
     header {
         position: fixed;
     }
@@ -41,50 +41,45 @@
         border-radius: 30px;
     }
 
-    .section {
-        flex-direction: row;
-    }
 
     .section:first-child {
         margin-top: 30px;
     }
 
     .isometric {
-        width: 85%;
+        width: 90%;
+        margin: 8% 5%;
     }
 
     #perks {
         padding: 2%;
+        flex-direction: row;
     }
 
     .block {
         padding: 1%;
-        width: 30%;
+        width: 33%;
+        transform: scale(0.9);
+
+    }
+
+    .block:hover {
+        transform: scale(1);
     }
 
     #map {
-        width: 50%;
+        width: 70%;
+        margin: 6% 15% 2%;
     }
+
+
 }
 
 
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .writing {
-        width: 40%;
 
-    }
-
-    .isometric {
-
-        width: 60%;
-    }
-}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}

@@ -1,0 +1,76 @@
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:950px) {
+    .section {
+        width: 100%;
+
+    }
+
+    .writing {
+        position: absolute;
+        width: 48vw;
+
+    }
+
+    .writing h1,
+    .writing h2 {
+        font-family: 'pacifico', sans-serif;
+        font-weight: normal;
+        font-size: clamp(30px, 3vw, 60px);
+        margin: 5px auto;
+    }
+
+    .about-us {
+        float: left;
+    }
+
+
+
+    .isometric {
+        width: 65vw;
+        z-index: -1;
+    }
+
+    #phone-dude {
+        float: right;
+        position: relative;
+        top: 30px;
+    }
+
+    #map {
+        margin: auto;
+        width: 35vw;
+        float: left;
+    }
+
+    .locations {
+        position: relative;
+        float: right;
+
+    }
+
+    .pricing {
+        float: left;
+        width: 35vw;
+        position: relative;
+    }
+
+    table {
+
+        float: right;
+        width: 50%;
+    }
+
+    #contact img {
+        position: relative;
+        bottom: 30px;
+        width: 40vw;
+    }
+
+    #contact .contact {
+        width: 40%;
+        float: right;
+        position: relative;
+    }
+
+
+}
