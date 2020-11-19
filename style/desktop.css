@@ -26,14 +26,14 @@
 
 
     .isometric {
-        width: 65vw;
+
         z-index: -1;
     }
 
     #phone-dude {
         float: right;
-        position: relative;
-        top: 30px;
+        width: 60vw;
+        margin-bottom: -5vh;
     }
 
     #map {
@@ -42,11 +42,16 @@
         float: left;
     }
 
+    #perks {
+        margin-top: 0;
+    }
+
     .locations {
         position: relative;
         float: right;
 
     }
+
 
     .pricing {
         float: left;
