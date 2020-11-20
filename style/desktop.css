@@ -67,8 +67,9 @@
 
     #contact img {
         position: relative;
-        bottom: 30px;
-        width: 40vw;
+        margin-left: 0;
+        bottom: 50px;
+        width: 44vw;
     }
 
     #contact .contact {
