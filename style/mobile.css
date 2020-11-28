@@ -4,6 +4,7 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
 
 }
 
@@ -46,6 +47,8 @@ p {
     font-weight: 420;
     text-align: justify;
 }
+
+
 
 .inner-header {
     width: 90%;
@@ -342,6 +345,11 @@ footer h3 {
 .the-dev>p {
     font-size: xx-small;
     text-align: center;
+}
+
+.the-dev a {
+    color: rgb(200, 200, 200);
+    text-decoration: underline;
 }
 
 form {
